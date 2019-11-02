@@ -1,2 +1,2 @@
 # UDClass
-udacity数据结构与算法课程字幕中文翻译
+udacity数据结构与算法课程中文翻译
