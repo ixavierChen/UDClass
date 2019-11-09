@@ -1,0 +1,53 @@
+English
+0
+Input: texts calls
+Output: first and last call information
+Analysis: None
+Complexity: O(1)
+1 
+Input: calls
+Output: number of numbers that are not repeated
+Analysis: decipher the number to get the deduplicated number set, then get the number of numbers
+Complexity: O(n)
+2 
+Input: calls
+Output: The longest call information
+Analysis: Accumulate time by storing call information in dict
+Complexity: O(n)
+3
+Input: calls
+Output: the phone number that was called by (080)
+Analysis: Get a call by slice
+Complexity: O(n)
+4
+Input: calls
+Output: No called phone number
+Analysis: first obtain the called phone record, then traverse the phone set of 1 to determine whether there is a called record
+Complexity: O(n)
+
+Chinese
+0
+输入：texts calls
+输出：第一个和最后一个电话信息
+分析：无
+复杂度：O(1)
+1 
+输入：calls
+输出：不重复的号码个数
+分析：对号码去重得到去重的号码集合，然后获得号码个数
+复杂度：O(n)
+2 
+输入：calls
+输出：通话时间最长的电话信息
+分析：将通话信息存入dict中从而累计时间
+复杂度：O(n)
+3
+输入：calls
+输出：被以（080）电话呼叫的电话号
+分析：通过切片获取电话
+复杂度：O(n)
+4
+输入：calls
+输出：没有被叫的电话号
+分析：先获取被叫电话记录，然后遍历1的电话集合判断是否存在被叫记录
+复杂度：O(n)
