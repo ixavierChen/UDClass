@@ -2,7 +2,7 @@ English
 0
 Input: texts calls
 Output: first and last call information
-Analysis: None
+Analysis: Mainly dependent on the underlying structure
 Complexity: O(1)
 1 
 Input: calls
@@ -18,12 +18,12 @@ Complexity: O(n)
 Input: calls
 Output: the phone number that was called by (080)
 Analysis: Get a call by slice
-Complexity: O(n)
+Complexity: O(n+nlogn)
 4
 Input: calls
 Output: No called phone number
 Analysis: first obtain the called phone record, then traverse the phone set of 1 to determine whether there is a called record
-Complexity: O(n)
+Complexity: O(n+nlogn)
 
 Chinese
 0
