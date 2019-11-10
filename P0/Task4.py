@@ -28,17 +28,13 @@ import allcall
 
 allcallSet  = allcall.getAllCallSet()
 
-try:
-    for recode in calls:
-        allcallSet.remove(recode[1])
-    for textcode in texts:
-        allcallSet.remove(textcode[0])
-        allcallSet.remove(textcode[1])
-except KeyError as identifier:
-    pass
+for recode in calls:
+    allcallSet.discard(recode[1])
+for textcode in texts:
+    allcallSet.discard(textcode[0])
+    allcallSet.discard(textcode[1])
 
-telmarklist = list(allcallSet)
-telmarklist.sort()
+telmarklist = sorted(list(allcallSet))
 print(f"These numbers could be telemarketers: ")
 for telemark in telmarklist:
     print(telemark)
